@@ -6,7 +6,7 @@ dotenv.config();
 const connect = () => {
   mongoose
     .connect(process.env.MOGODB, {
-      dbName: "test4", // 데이터베이스명을 사용합니다.
+      dbName: process.env.MONGODB_NAME // 데이터베이스명을 사용합니다.
     })
     .catch((err) => console.log(err))
     .then(() => console.log("몽고디비 연결 성공"));
