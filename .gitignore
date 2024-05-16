@@ -1,0 +1,3 @@
+# Git 에 플젝 업로드 할때, 안올라 갔으면 하는 것들
+.env
+.node_modules
